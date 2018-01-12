@@ -1,1 +1,2 @@
-# lgbt_video_game_datavisu
+# lgbtq-games-represent
+LGBTQ+ representativeness in games
