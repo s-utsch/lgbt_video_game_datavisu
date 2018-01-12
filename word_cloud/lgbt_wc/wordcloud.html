@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Word Cloud</title>
+    <script src="../lib/d3/d3.js" charset="utf-8"></script>
+    <script src="../lib/d3/d3.layout.cloud.js"></script>
+    <script src="../d3.wordcloud.js"></script>
+    <script src="lgbtq.words.js"></script>
+  </head>
+  <body style="text-align: center">
+    <div id='wordcloud'></div>
+    <script>
+      function shuffle(a) {
+	for (let i = a.length; i; i--) {
+		let j = Math.floor(Math.random() * i);
+		[a[i - 1], a[j]] = [a[j], a[i - 1]];
+	}
+      }
+      var colors = ["#0000ff", "#400080", "#800080", "#800040", "#ff00ff"];
+      shuffle(colors);
+      d3.wordcloud()
+	.font("arial black")
+        .size([600, 400])
+        .fill(d3.scale.ordinal().range(colors))
+        .words(words)
+        .start(); 
+    </script>
+  </body>
+</html>
+

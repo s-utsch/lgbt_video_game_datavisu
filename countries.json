@@ -1,0 +1,15 @@
+[{"name":"Australia","alias":"AUS","continent":"Oceania","points":5},
+ {"name":"Belgium","alias":"BEL","continent":"Europe","points":11},
+ {"name":"Canada","alias":"CAN","continent":"North America","points":57},
+ {"name":"France","alias":"FRA","continent":"Europe", "points":10},
+ {"name":"Germany","alias":"GER","continent":"Europe","points":14},
+ {"name":"Italy","alias":"ITA","continent":"Europe","points":15},
+ {"name":"Japan","alias":"JPN","continent":"Asia","points":255},
+ {"name":"Norway","alias":"NOR","continent":"Europe","points":9},
+ {"name":"Poland","alias":"POL","continent":"Europe","points":2},
+ {"name":"South Korea","alias":"KOR","continent":"Asia","points":2},
+ {"name":"Spain","alias":"ESP","continent":"Europe","points":6},
+ {"name":"United States","alias":"USA","continent":"North America","points":318},
+ {"name":"Great Britain","alias":"GBR","continent":"Europe","points":98},
+ {"name":"Singapore","alias":"SIN","continent":"Asia","points":1}
+]

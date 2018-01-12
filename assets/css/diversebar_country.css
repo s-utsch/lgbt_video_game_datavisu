@@ -1,0 +1,11 @@
+body {
+    font-size: 12px;
+    font-family: 'Oswald', sans-serif;
+	text-transform:uppercase;
+}
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}

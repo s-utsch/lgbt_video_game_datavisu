@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>The LGBTQ Video Game Archive</title>
+		<link rel="stylesheet" type="text/css" href="vendors/css/jquery.fullPage.css" />
+		<link href="https://fonts.googleapis.com/css?family=Fugaz+One|Montserrat:900|Lobster|Oswald" rel="stylesheet">
+
+
+		<script src="vendors/js/jquery.min.js"></script>
+		<script src="vendors/js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="/vendors/js/scrolloverflow.js"></script>
+		<script type="text/javascript" src="vendors/js/jquery.fullPage.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#fullpage').fullpage({
+	        anchors: ['title', 'games', 'countries', 'wordcloud', 'contenttypes', 'dashboard', 'genreandsexuality', 'streamgraph', 'homophobia', 'explicity','sets'],
+					sectionsColor: ['#ffffff', '#ffffff', '#ffffff', '#ffffff', '#ffffff','#ffffff','#ffffff','#ffffff','#ffffff', '#ffffff','#ffffff'],
+				  continuousVertical: true,
+	        autoScrolling: false,
+					// scrollOverflow: true,
+					navigation: true,
+					navigationPosition: 'right',
+					navigationTooltips: ['Title', 'Content Type', 'Countries', 'Overview', 'Genre & Sexuality', 'Evolution Through Time', 'Explicity', 'Representation Sets']
+				});
+			});
+		</script>
+
+	</head>
+	<body>
+
+	<div id="fullpage">
+		<div class="section active" id="section0">
+			<h1>Visualizing the</h1>
+			<h1><span class="red">L</span><span class="orange">G</span><span class="yellow">B</span><span class="green">T</span><span class="blue">Q</span> <span class="purple">V</span>ideo Game Archive</h1>
+		</div>
+
+		
+		<div class="section" id="section1">
+		<!-- CONTENT TYPES -->
+			<div id="funneltitle">
+			Types of Content
+			</div>
+			<div id="funnelsection">
+			<p>The content available in the LGBTQ Video Game Archive is distributed in the following categories as shown in the graph below. For further analysis in the other visualizations, only the content classified as “characters” has been considered, as it is the most numerous category and the most suitable for the development of data visualization.</p>
+			</div>
+			<div class="frame-container frame-container-1x1">
+				<iframe src="funnel.html" frameborder = 0 width = 800 align = center></iframe>
+				
+			</div>
+		</div>
+		<div class="section" id="section2">
+		<!-- countries -->
+			<div id="countriestitle">
+			Countries
+			</div>
+			<div id="countriestext">
+			<p>Here we have a map with the global distribution of the games logged into the archive.</p>
+			</div>
+			<div class="frame-container frame-container-1x1">
+				<iframe src="worldmap.html" frameborder = 0 width = 800 align = center></iframe>
+				
+			</div>
+		</div>
+
+		<div class="section" id="section3">
+		<div id="dashtitle">Overview</div>
+		<!-- DASHBOARD -->
+				<div id = "dashtext">
+					<p>This is a panel with three interactive visualizations.</p>
+					<p>The pie chart shows the types of representation between 6 categories, all the 6 of them sum up to a 100%. If you click on one of the slices of the graph the two visualizations on the right change to show data about that category. If you click on the same category again, the dashboard will show the info for the whole database.</p>
+					<p>The histogram on the lower right shows the number of games (not content entries) that appear in each game genre. The line chart represents the number of games with that theme through the years.</p>
+				</div>
+				<div style="margin: 0 auto;width: 70%;">
+				<iframe src="dashboard.html" width= "100%" height=450 frameborder = 0></iframe>	
+				</div>
+		</div>
+		
+		<div class="section" id="section4">
+		<div id="dendotitle">
+		<h6>Game Genre & Sexuality</h6>
+		</div>
+		<!-- DENDOGRAM -->
+				<div id="dendotext">
+					<p>The dendrogram shows content in each major game genre based on the sexual orientation of the characters. The scale is from 1 to 5, in which 1 means few games and 5 means loads of games.</p>
+					<p>The three most common sexualities in the dataset - Gay, Lesbian, Bisexual - are represented as a horizontal bar, and the dendrogram shows how the genres are related to LGBTQ Content concerning sexual orientations of the characters. </p>
+					<p>Gender identities were not contemplated because their presence in video games, compared to diverse sexualities, was not sufficient to generate this visualization.</p>
+				</div>
+				<div style="margin: 0 auto;width: 75%;">
+			<iframe id=dendframe src="dendrogram.html" width= "100%" height=1150 frameborder = 0></iframe>	</div>
+		</div>	
+		
+		<div class="section" id="section5">
+		<div id="streamtitle">
+		Gender & Sexuality Through Time
+		</div>
+		<!-- STREAMGRAPH -->
+				<div id="streamtext">
+					<p>The streamgraph shows the same 6 categories present in the dashboard, but with the release years of their respective games. Each category is represented by a colour and it’s area in the graph represents its presence in the year in comparison to the other categories. It was built in a scale of 2, from 0 to 1 we have the area regarding 3 sexual orientations - Gay, Lesbian and Bisexual - and from 1 to 2 we have 3 gender identities and expressions - Transgender Men and Women, Gender Non-Conforming and Non-binary. The sexualities and gender identities are being treated as different groups, compared within themselves. </p>
+				</div>
+				<iframe src="streamgraph.html" width= "90%" height=500 frameborder = 0></iframe>	
+		</div>
+		
+		<div class="section" id="section6">
+		<h3>Explicity</h3>
+		<div id="explicitytext">
+			<p>Some content on the archive is tagged as “Explicit”, “Implicit” or “Rumored”. In this visualizations we have the distribution of this content, first by country and then by year.</p>
+			</div>
+		<!-- EXPLICIT vs IMPLICIT -->
+				<h5>By Country</h5>
+						<div style="margin: 0 auto;width: 80%;">
+				<iframe src="diversebar_country.html" width= "100%" height=600 frameborder = 0></iframe>
+				</div>
+				<h5>By Year</h5>
+						<div style="margin: 0 auto;width: 80%;">
+				<iframe src="diversebar_year.html" width= "100%" height=600 frameborder = 0></iframe>	
+				</div>	
+		</div>
+
+		<div class="section" id="section7">
+			<h6>Representation Sets</h6>
+			<!-- CHORDS -->
+			<div id="chordstext">
+			<p>This graph shows the shared representation between two categories. By clicking on one of the categories the visualization will change to show how many games that feature this identity or sexuality and each of the other categories.</p>
+			</div>
+		<div style="margin: 0 auto;width: 80%;">
+				<iframe src="chord.html" id="chordframe" scrolling="no" width= "100%" height=400 frameborder=0></iframe>	</div>
+		</div>
+	</div>
+
+	</body>
+</html>

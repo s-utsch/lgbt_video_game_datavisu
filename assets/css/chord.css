@@ -1,0 +1,19 @@
+body {
+    font-size: 12px;
+    font-family: 'Oswald', sans-serif;
+	text-transform:uppercase;
+	  font-weight:300;
+}
+
+svg text{
+  fill:black;
+  font-size:21px;
+}
+svg .values text{
+  pointer-events:none;
+  stroke-width: 0.5px;
+}
+.groups:hover{
+  cursor:pointer;
+  font-weight:bold;
+}

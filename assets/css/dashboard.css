@@ -1,0 +1,114 @@
+#pieChart {    
+	position:absolute;
+	top:10px;
+	left:10px;
+	width:400px;
+	height: 400px; 
+}
+
+
+
+#lineChart {    
+	position:absolute;
+	top:10px;
+	left:410px;
+	height: 150px;
+}
+
+#barChart {
+	position:absolute;
+	top:160px;
+	left:410px;
+	height: 250px;
+}
+
+.slice {
+   font-size: 10pt;
+   font-family: 'Oswald', sans-serif;
+   fill: white; //svg specific - instead of color
+   font-weight: bold;	
+   text-transform: uppercase;
+   -webkit-font-smoothing: antialiased;
+  		} 
+
+/*for line chart*/
+.axis path, .axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges; //The shape-rendering property is an SVG attribute, used here to make sure our axis and its tick mark lines are pixel-perfect. 
+}
+
+.line {
+  fill: none;
+  /*stroke: steelblue;*/
+  stroke-width: 3px;
+}
+
+.dot {
+  /*fill: white;*/
+  /*stroke: steelblue;*/
+  stroke-width: 1.5px;
+  }
+				
+
+.axis text {
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+}
+
+.title {
+	width:10px;
+	font-family: 'Oswald', sans-serif;
+    font-size: 12px;	
+	
+	text-anchor: middle;
+	text-transform:uppercase;
+
+}
+		
+}
+
+.xAxis {
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    fill: black;
+}  
+.barbase {
+	font-size: 8pt; 
+	font-family: 'Oswald', sans-serif;
+	
+	/*text-transform:uppercase;*/
+    fill: black;
+
+}  
+.yAxis {
+    font-family: Helvetica;
+    font-size: 11px;
+    fill: white;
+    
+}
+
+  
+table {
+	border-collapse:collapse;
+	border: 12px;	
+	font-family: 'Oswald', sans-serif;
+	color: #5C5558;
+	font-size: 12px;
+	text-align: right;	
+	text-transform: uppercase;
+}
+
+
+
+#lineChartTitle1 {
+	font-family: 'Oswald', sans-serif;
+	font-size  : 12px;
+	fill       : black;
+	
+	text-anchor: middle;
+	text-transform: uppercase;
+}
+
+/*font-style: italic;*/
+}

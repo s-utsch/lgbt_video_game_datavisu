@@ -1,0 +1,65 @@
+.title {
+	 font-family: Helvetica;
+    font-size: 15px;	
+		
+}
+p{
+
+	font-family: Helvetica;
+    font-size: 15px;	
+	text-align:center;
+
+
+
+}
+h1{
+
+	font-family: Helvetica;
+    font-size: 45px;	
+	text-align:center;
+	
+
+
+
+}
+h2{
+
+	font-family: Helvetica;
+    font-size: 36px;	
+	text-align:center;
+
+
+
+}
+
+.intrinsic-container {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+}
+ 
+/* 16x9 Aspect Ratio */
+.intrinsic-container-16x9 {
+  padding-bottom: 56.25%;
+
+}
+ 
+/* 4x3 Aspect Ratio */
+.intrinsic-container-4x3 {
+  padding-bottom: 75%;
+}
+
+.intrinsic-container-dash {
+  padding-bottom: 40%;
+}
+ 
+ 
+.intrinsic-container iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  margin: 100px;
+  text-align:center;
+}

@@ -1,0 +1,25 @@
+.bar {
+  fill: #00BFFF;
+}
+
+.bar:hover {
+  fill: #FF0000;
+}
+
+.axis--x path {
+  display: none;
+}
+
+.axis--x {
+	font: 16px Monaco;
+	font-weight: bold;
+}
+
+.axis--y {
+	font: 16px Monaco;
+	font-weight: bold;
+}
+h1{
+	font: 30px Monaco;
+	font-weight: bold;
+}
