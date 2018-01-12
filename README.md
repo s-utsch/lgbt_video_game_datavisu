@@ -1,2 +1,2 @@
 # lgbtq-games-represent
-LGBTQ+ representation in games datavisualizations
+LGBTQ+ representation in games data visualizations
