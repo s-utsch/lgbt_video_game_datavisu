@@ -412,6 +412,11 @@ html.fp-enabled,
 
 	}
 	
+	#section8 {
+		height: 100%;
+		margin-left:150px;
+	}
+	
 	#funnelsection{
 		font-weight:200;
 		font-family:Oswald;
