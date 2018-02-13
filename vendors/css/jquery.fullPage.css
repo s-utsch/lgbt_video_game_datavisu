@@ -414,9 +414,8 @@ html.fp-enabled,
 	
 	#section8 {
 		height: 100%;
-		/*margin-left:150px;*/
-    	left: 20%;
-    	margin-right: -50%;
+    		left: 10%;
+    		margin-right: -50%;
 		text-align:center;
 	}
 	
@@ -525,10 +524,7 @@ html.fp-enabled,
 		font-family:Oswald;
 		font-size:16px;
 		width:50%;
-		left: 30%;
-    	margin-right: -50%;
 		text-align:center;
-		/*margin-left:8%;*/
 		
 		
 	}
