@@ -414,7 +414,9 @@ html.fp-enabled,
 	
 	#section8 {
 		height: 100%;
-		margin-left:300px;
+		/*margin-left:150px;*/
+    	left: 20%;
+    	margin-right: -50%;
 		text-align:center;
 	}
 	
@@ -522,9 +524,11 @@ html.fp-enabled,
 		font-weight:200;
 		font-family:Oswald;
 		font-size:16px;
-		width:60%;
+		width:50%;
+		left: 30%;
+    	margin-right: -50%;
 		text-align:center;
-		margin-left:8%;
+		/*margin-left:8%;*/
 		
 		
 	}
